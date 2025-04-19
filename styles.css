@@ -214,3 +214,7 @@ select.player-dropdown:focus {
 .light-mode .theme-button {
     background-color: #eee;
 }
+
+.light-mode .theme-button:hover {
+    background-color: #555;
+}
