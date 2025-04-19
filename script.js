@@ -32,7 +32,7 @@ document.querySelectorAll(".status").forEach(select => {
 
 // Do not touch player dropdowns, leave them as they are (no background change)
 document.querySelectorAll(".player-dropdown").forEach(select => {
-    // createPlayerOptions(select); // Create player options dynamically (this part is the same as before)
+    //  createPlayerOptions(select);  // Removed createPlayerOptions.  It's not needed.
 });
 
 // Function to handle crossing out the name/item when clicked
@@ -51,5 +51,21 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".clickable-name").forEach(item => {
         item.addEventListener("click", toggleCrossOut);
     });
-});
 
+    // Theme toggle functionality
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+    let isDarkMode = true; // Start with dark mode
+
+    themeToggle.addEventListener('click', () => {
+        if (isDarkMode) {
+            body.classList.add('light-mode');
+            isDarkMode = false;
+            themeToggle.textContent = 'Dark Mode'; // Update button text
+        } else {
+            body.classList.remove('light-mode');
+            isDarkMode = true;
+            themeToggle.textContent = 'Light Mode'; // Update button text
+        }
+    });
+});
