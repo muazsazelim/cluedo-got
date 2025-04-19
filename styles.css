@@ -120,10 +120,7 @@ select.player-dropdown:focus {
 }
 
 /* Crossed out text */
-.crossed-out {
-    text-decoration: line-through;
-    color: #aaa; /* Lighter gray for crossed out text */
-}
+
 
 /* Make clickable names look like links */
 .clickable-name {
@@ -203,4 +200,13 @@ select.player-dropdown:focus {
     font-size: 0.9em;
     color: #888;
     margin-top: 20px;
+}
+
+.crossed-out {
+    text-decoration: line-through;
+    color: #777373; /* Lighter gray for crossed out text */
+}
+
+.light-mode .crossed-out {
+    color: #aaa;
 }
