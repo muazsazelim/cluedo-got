@@ -129,9 +129,6 @@ select.player-dropdown:focus {
     color: #ddd;
 }
 
-.clickable-name:hover {
-    color: #fff;
-}
 
 .theme-button {
     position: fixed; /* Fix button to the bottom left */
