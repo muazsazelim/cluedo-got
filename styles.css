@@ -125,8 +125,6 @@ select.player-dropdown:focus {
 /* Make clickable names look like links */
 .clickable-name {
     cursor: pointer;
-    transition: color 0.3s;
-    color: #ddd;
 }
 
 
