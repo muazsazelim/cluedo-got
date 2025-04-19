@@ -6,13 +6,25 @@
     <title>Cluedo: Game of Thrones</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400&display=swap" rel="stylesheet" />
+    <style>
+        .half-sun-moon {
+          background: linear-gradient(to right, #fff 50%, #000 50%);
+          -webkit-background-clip: text;
+          color: transparent;
+          font-size: inherit; /* Use the font size of the parent */
+          line-height: 1;
+        }
+      </style>
 </head>
 <body>
     <div class="container">
         <h1>Cluedo: Game of Thrones</h1>
         <h2>The Red Keep</h2>
 
-        <button id="theme-toggle" class="theme-button">Light Mode</button>
+        <button id="theme-toggle" class="theme-button">
+            <span id="theme-icon" class="material-symbols-outlined half-sun-moon">dark_mode</span>
+        </button>
 
         <section>
             <table>

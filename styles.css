@@ -134,12 +134,12 @@ select.player-dropdown:focus {
 }
 
 .theme-button {
-    position: fixed; /* Fix button to the top right */
-    top: 20px;
-    right: 20px;
+    position: fixed; /* Fix button to the bottom left */
+    bottom: 20px;
+    left: 20px;
     padding: 10px 15px;
     border-radius: 5px;
-    background-color: #eee; /* Light background for button */
+    background-color: #333; /* Light background for button */
     color: #333; /* Dark text for button */
     border: none;
     cursor: pointer;
@@ -209,4 +209,8 @@ select.player-dropdown:focus {
 
 .light-mode .crossed-out {
     color: #aaa;
+}
+
+.light-mode .theme-button {
+    background-color: #eee;
 }

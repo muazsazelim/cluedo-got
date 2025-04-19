@@ -61,11 +61,9 @@ document.addEventListener("DOMContentLoaded", () => {
         if (isDarkMode) {
             body.classList.add('light-mode');
             isDarkMode = false;
-            themeToggle.textContent = 'Dark Mode'; // Update button text
         } else {
             body.classList.remove('light-mode');
             isDarkMode = true;
-            themeToggle.textContent = 'Light Mode'; // Update button text
         }
     });
 });
